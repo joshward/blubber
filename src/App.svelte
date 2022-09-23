@@ -1,11 +1,13 @@
 <script lang="ts">
-  import { invoke } from "@tauri-apps/api/tauri";
+  import { Router, Route } from "svelte-navigator";
+
+  import mainPage from "@/pages/Main.svelte";
+  import settingsPage from "@/pages/Settings.svelte";
 </script>
 
 <main>
-  {#await invoke("get_app_location")}
-    <h1>Loading</h1>
-  {:then value}
-    <h1>{value}</h1>
-  {/await}
+  <Router>
+    <Route path="/" component={mainPage} />
+    <Route path="settings" component={settingsPage} />
+  </Router>
 </main>

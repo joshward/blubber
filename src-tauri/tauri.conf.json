@@ -55,11 +55,19 @@
     },
     "windows": [
       {
+        "label": "main",
         "fullscreen": false,
         "height": 600,
         "resizable": true,
         "title": "Blubber",
-        "width": 800
+        "width": 800,
+        "url": "/"
+      },
+      {
+        "label": "settings",
+        "title": "Settings",
+        "url": "settings",
+        "visible": false
       }
     ]
   }
