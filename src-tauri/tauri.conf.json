@@ -12,10 +12,15 @@
   },
   "tauri": {
     "allowlist": {
-      "all": false,
       "dialog": {
-        "all": false,
         "message": true
+      },
+      "window": {
+        "close": true,
+        "minimize": true,
+        "setCursorIcon": true,
+        "startDragging": true,
+        "unminimize": true
       }
     },
     "bundle": {
@@ -61,17 +66,15 @@
       {
         "label": "main",
         "fullscreen": false,
-        "height": 600,
+        "height": 800,
+        "width": 600,
+        "minWidth": 300,
+        "minHeight": 400,
+        "center": true,
         "resizable": true,
         "title": "Blubber",
-        "width": 800,
-        "url": "/"
-      },
-      {
-        "label": "settings",
-        "title": "Settings",
-        "url": "settings",
-        "visible": false
+        "url": "home",
+        "decorations": false
       }
     ]
   }

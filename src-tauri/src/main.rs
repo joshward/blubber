@@ -19,7 +19,7 @@ fn get_app_location(app_handle: tauri::AppHandle) -> Result<String, String> {
 fn open_settings(app_handle: tauri::AppHandle) -> Result<(), String> {
     app_handle
         .get_window("settings")
-        .unwrap()
+        .expect("No windows named settings")
         .show()
         .map_err(|err| err.to_string())
 }

@@ -1,0 +1,14 @@
+<script lang="ts">
+  export let className: string;
+</script>
+
+<svg xmlns="http://www.w3.org/2000/svg" class={className} viewBox="0 0 512 512">
+  <path
+    fill="none"
+    stroke="currentColor"
+    stroke-linecap="square"
+    stroke-linejoin="round"
+    stroke-width="32"
+    d="M400 256H112"
+  />
+</svg>

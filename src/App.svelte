@@ -1,13 +1,12 @@
 <script lang="ts">
   import { Router, Route } from "svelte-navigator";
 
-  import mainPage from "@/pages/Main.svelte";
-  import settingsPage from "@/pages/Settings.svelte";
+  import HomePage from "@/pages/Home.svelte";
 </script>
 
 <main>
   <Router>
-    <Route path="/" component={mainPage} />
-    <Route path="settings" component={settingsPage} />
+    <Route path="home/*" component={HomePage} />
+    <Route let:location>ERROR: NO SUCH PAGE {location.pathname}</Route>
   </Router>
 </main>

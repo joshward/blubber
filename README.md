@@ -1,7 +1,18 @@
-# Tauri + Svelte + Typescript
+# Blubber
 
-This template should help get you started developing with Tauri, Svelte and TypeScript in Vite.
+Desktop app for managing Github PRs. Helping to control the notification chaos.
 
-## Recommended IDE Setup
+**Built on Tauri with a Vite, Svelte, and Typescript front end**
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
+## Development Setup Requirements
+
+- Rust - https://rustup.rs/
+- Yarn - https://yarnpkg.com
+
+### Init steps
+
+- `yarn` - in project root
+
+### Dev
+
+`yarn run tauri dev` - in project root. _Will load all necessary Rust libraries on the first run._
